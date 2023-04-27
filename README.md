@@ -23,10 +23,17 @@ The implementation of SSLpheno
 # data
 Our data files
     data/all_protein_exist.txt： Proteins from genes mapping
+    
     data/edge(str)_protein_weight_GeneMANIA.txt： GGAs of GeneMANIA
+    
     data/edge(str)_protein_weight_HumanNet.txt：GGAs of HumanNet
+    
     data/edge(str)_protein_weight_String.txt： GGAs of String
+    
     data/hpo_annotation_20200825.json：Human phenotype annotations of proteins, downloaded from https://hpo.jax.org/app/ 
-    data/protein2go.json：protein-go annotations
+    
+    data/protein2go.json：protein-go 
+    
     data/z_all_protein_(go)feature.txt：GO features of proteins
+    
     data/z_all_protein_(hpo)label.txt：HPO labels of proteins
