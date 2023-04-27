@@ -7,11 +7,17 @@ Our model is implemented by Python 3.7 with Pytorch 1.4.0 and run on Nvidia GPU 
 # src
 The implementation of SSLpheno
     src/evaluation.py：This script is used to calculate macro_average and micro_average metrics.
+    
     src/layers.py： The module for decoding
+    
     src/model.py： The adaptive encoder 
+    
     src/optimizer.py： This script is used to caculate the LOSS and optimizing model
+    
     src/main.py：The main file of SSLpheno
+    
     src/trainNN.py： The deep neural network multi_label classifier
+    
     src/utils.py：The module for loading data
     
 # data
