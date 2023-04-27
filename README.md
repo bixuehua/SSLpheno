@@ -6,6 +6,7 @@ Our model is implemented by Python 3.7 with Pytorch 1.4.0 and run on Nvidia GPU 
 
 # src
 The implementation of SSLpheno
+
     src/evaluation.py：This script is used to calculate macro_average and micro_average metrics.
     
     src/layers.py： The module for decoding
@@ -22,6 +23,7 @@ The implementation of SSLpheno
     
 # data
 Our data files
+
     data/all_protein_exist.txt： Proteins from genes mapping
     
     data/edge(str)_protein_weight_GeneMANIA.txt： GGAs of GeneMANIA
