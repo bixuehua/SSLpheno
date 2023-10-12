@@ -1,5 +1,5 @@
 # SSLpheno
-*SSLpheno is a model for gene-phenotype association prediction by self-supervised learning*
+**SSLpheno is a model for gene-phenotype association prediction by self-supervised learning**
 
 # Dependencies
 Our model is implemented by Python 3.7 with Pytorch 1.4.0 and run on Nvidia GPU with CUDA 10.0
@@ -22,7 +22,7 @@ Our model is implemented by Python 3.7 with Pytorch 1.4.0 and run on Nvidia GPU 
   * Download gene function annotation from Uniprot database _(https://string-db.org/mapping_files/uniprot_mappings/).
   
 # src
-*The implementation of SSLpheno
+* The implementation of SSLpheno
 
     src/evaluation.py：This script is used to calculate macro_average and micro_average metrics.    
     src/layers.py： The module for decoding    
@@ -35,22 +35,22 @@ Our model is implemented by Python 3.7 with Pytorch 1.4.0 and run on Nvidia GPU 
 ## preprocessing
   * Python files for preprocessing raw data
   
-  ``annotation.py``: The preprocessing code for _HPO_2020_
-  ``disgenet.py``: The preprocessing code for _disgenet_
-  ``string.py``: Providing the codes for GGA network construction
-  ``obo_parser.py, ontology.py, utils.py`` are auxiliary files
+  ``annotation.py``: The preprocessing code for _HPO_2020_.<br>
+  ``disgenet.py``: The preprocessing code for _disgenet_.<br>
+  ``string.py``: Providing the codes for GGA network construction.<br>
+  ``obo_parser.py, ontology.py, utils.py`` are auxiliary files.
   
 # data
 ## hpo_2020
   * Dataset obtained from HPO database, providing the data files for SSLpheno 
 
-    data/all_gene_exist.txt： gene list in our experiments   
-    data/edge(str)_gene_weight_GeneMANIA.txt： GGAs of GeneMANIA    
-    data/edge(str)_gene_weight_HumanNet.txt：GGAs of HumanNet    
-    data/edge(str)_gene_weight_String.txt： GGAs of String    
-    data/hpo_annotation_20200825.json：gene-phenotype annotations       
-    data/z_all_gene_(go)feature.txt：GO features of genes  
-    data/z_all_gene_(hpo)label.txt：HPO labels of genes
+    ``data/all_gene_exist.txt：`` gene list in our experiments   
+    ``data/edge(str)_gene_weight_GeneMANIA.txt：`` GGAs of GeneMANIA    
+    ``data/edge(str)_gene_weight_HumanNet.txt：``GGAs of HumanNet    
+    ``data/edge(str)_gene_weight_String.txt：`` GGAs of String    
+    ``data/hpo_annotation_20200825.json：``gene-phenotype annotations       
+    ``data/z_all_gene_(go)feature.txt：``GO features of genes  
+    ``data/z_all_gene_(hpo)label.txt：``HPO labels of genes
 	
 ## disgenet
   * Dataset obtained from DisGeNET database, providing the data files for SSLpheno 
