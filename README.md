@@ -35,10 +35,10 @@ Our model is implemented by Python 3.7 with Pytorch 1.4.0 and run on Nvidia GPU 
 ## preprocessing
   * Python files for preprocessing raw data
   
-  ``annotation.py``: The preprocessing code for _HPO_2020_.<br>
-  ``disgenet.py``: The preprocessing code for _disgenet_.<br>
-  ``string.py``: Providing the codes for GGA network construction.<br>
-  ``obo_parser.py, ontology.py, utils.py`` are auxiliary files.
+    ``annotation.py``: The preprocessing code for _HPO_2020_.<br>
+    ``disgenet.py``: The preprocessing code for _disgenet_.<br>
+    ``string.py``: Providing the codes for GGA network construction.<br>
+    ``obo_parser.py, ontology.py, utils.py`` are auxiliary files.
   
 # data
 ## hpo_2020
