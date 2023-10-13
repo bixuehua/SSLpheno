@@ -2,10 +2,17 @@
 **SSLpheno is a model for gene-phenotype association prediction by self-supervised learning**
 
 <img src="https://github.com/bixuehua/SSLpheno/blob/main/Fig1.png">
-Fig. 1.The workflow of SSLpheno. 1 Attributed network construction and feature preprocessing. 2 Self-supervised learning for pre-training. 3 Multi-label classification for phenotype prediction.
+Fig. 1.The workflow of SSLpheno. (1) Attributed network construction and feature preprocessing. (2) Self-supervised learning for pre-training. (3) Multi-label classification for phenotype prediction.
 
 # Dependencies
 Our model is implemented by Python 3.7 with Pytorch 1.4.0 and run on Nvidia GPU with CUDA 10.0
+	- pytorch==1.10
+	- numpy==1.20.3
+	- sklearn==1.1.3
+	- pandas=2.0.0
+	- tensorboardX==2.6
+	- tensorflow==2.6.0
+	- keras==2.13.1
 
 # Preprocessing
 **HPO**
@@ -63,3 +70,7 @@ Our model is implemented by Python 3.7 with Pytorch 1.4.0 and run on Nvidia GPU 
     ``gene_associations.tsv:``The description of genes provided in DisGeNET.<br>
     ``DisGeNet_disease_hpo.json:``The mapping of diseases and phenotypes.<br>
     ``DisGeNet_gene_hpo.json:``The association of genes and phenotypes.<br>
+
+# Run
+ * The required packages can be installed by running `pip install -r requirements.txt`.
+ * python main.py
