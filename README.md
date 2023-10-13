@@ -44,13 +44,11 @@ Our model is implemented by Python 3.7 with Pytorch 1.4.0 and run on Nvidia GPU 
 ## hpo_2020
   * Dataset obtained from HPO database, providing the data files for SSLpheno 
 
-    ``data/all_gene_exist.txt：`` gene list in our experiments   
-    ``data/edge(str)_gene_weight_GeneMANIA.txt：`` GGAs of GeneMANIA    
-    ``data/edge(str)_gene_weight_HumanNet.txt：``GGAs of HumanNet    
-    ``data/edge(str)_gene_weight_String.txt：`` GGAs of String    
-    ``data/hpo_annotation_20200825.json：``gene-phenotype annotations       
-    ``data/z_all_gene_(go)feature.txt：``GO features of genes  
-    ``data/z_all_gene_(hpo)label.txt：``HPO labels of genes
+    ``data/all_gene.txt：`` gene list used in our experiments   
+    ``data/gene_feature_GO.txt：`` gene GO features    
+    ``data/gga_string.txt：``GGAs of String    
+    ``data/gene_phenotype.json：`` associations of gene-phenotype    
+    ``data/gene_label.txt：``the labels of genes     
 	
 ## disgenet
   * Dataset obtained from DisGeNET database, providing the data files for SSLpheno 
