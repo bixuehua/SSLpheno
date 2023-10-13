@@ -6,13 +6,13 @@ Fig. 1.The workflow of SSLpheno. (1) Attributed network construction and feature
 
 # Dependencies
 Our model is implemented by Python 3.7 with Pytorch 1.4.0 and run on Nvidia GPU with CUDA 10.0
-	- pytorch==1.10
-	- numpy==1.20.3
-	- sklearn==1.1.3
-	- pandas=2.0.0
-	- tensorboardX==2.6
-	- tensorflow==2.6.0
-	- keras==2.13.1
+- pytorch==1.10
+- numpy==1.20.3
+- sklearn==1.1.3
+- pandas=2.0.0
+- tensorboardX==2.6
+- tensorflow==2.6.0
+- keras==2.13.1
 
 # Preprocessing
 **HPO**
