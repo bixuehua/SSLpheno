@@ -54,4 +54,8 @@ Our model is implemented by Python 3.7 with Pytorch 1.4.0 and run on Nvidia GPU 
 	
 ## disgenet
   * Dataset obtained from DisGeNET database, providing the data files for SSLpheno 
-  
+    
+    ``disease_mappings.rar:``The mapping of diseases between different disease database.<br>
+    ``gene_associations.tsv:``The description of genes provided in DisGeNET.<br>
+    ``DisGeNet_disease_hpo.json:``The mapping of diseases and phenotypes.<br>
+    ``DisGeNet_gene_hpo.json:``The association of genes and phenotypes.<br>
