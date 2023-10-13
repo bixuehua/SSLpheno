@@ -55,4 +55,3 @@ Our model is implemented by Python 3.7 with Pytorch 1.4.0 and run on Nvidia GPU 
 ## disgenet
   * Dataset obtained from DisGeNET database, providing the data files for SSLpheno 
   
-	
