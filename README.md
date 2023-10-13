@@ -19,7 +19,7 @@ Our model is implemented by Python 3.7 with Pytorch 1.4.0 and run on Nvidia GPU 
   * Please firstly open STRING database _(https://string-db.org/cgi/download.pl)_ and choose "organism" as "Homo sapiens", then download "9606.protein.links.v11.0.txt.gz" (version number may change). Meanwhile, download mapping file under "ACCESSORY DATA" category, or open website Uniprot website _(https://string-db.org/mapping_files/uniprot_mappings/)_ to download it. 
   * Run ``string.py`` to get a json file containing PPI data.
 ## Feature_GO
-  * Download gene function annotation from Uniprot database _(https://string-db.org/mapping_files/uniprot_mappings/).
+  * Download gene function annotation from Uniprot database _(https://string-db.org/mapping_files/uniprot_mappings/)_.
   
 # src
 * The implementation of SSLpheno
