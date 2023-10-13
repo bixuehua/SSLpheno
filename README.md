@@ -6,31 +6,31 @@ Our model is implemented by Python 3.7 with Pytorch 1.4.0 and run on Nvidia GPU 
 
 # Preprocessing
 ## HPO
-  * Download raw gene annotation file from Human Phenotype Ontology(_http://hpo.jax.org/_), choosing the GENES TO PHENOTYPE button; Click _ontology_ option under the _data_ item at the top left to download _ontology.obo_ file.
-  * Conduct annotation.py file to get raw gene set and the JSON file of gene-phenotype annotations after true_path_rule.
+  * Download raw gene annotation file from Human Phenotype Ontology(_http://hpo.jax.org/_), choosing the _GENES TO PHENOTYPE_ button; Click _ontology_ option under the _data_ item at the top left to download ``ontology.obo`` file.
+  * Conduct ``annotation.py`` file to get raw gene set and the JSON file of gene-phenotype annotations after true_path_rule.
   * Upload the _gene_set file_ to the Uniprot website (_http://www.uniprot.org/id-mapping_) to get a mapping file from gene to protein.
 ## DisGeNET
-  * Download _gene_association.tsv_ file from DisGeNET (_http://www.disgenet.org/_) to get the geneSymbol.
+  * Download ``gene_association.tsv`` file from DisGeNET (_http://www.disgenet.org/_) to get the geneSymbol.
   * Using package _disgenet2r_ provided by DisGeNET to get the gene-phenotype association in R. Genes with no disease association were filtered out. (The file is too large, we do not upload)
-  * Click _UMLS CUI to several disease vocabularies_ in the _download page_ of DisGeNET to get the _disease_mappings.tsv_ file. DisGeNET disease ids which can be mapped to HPO based on the vocabulary field in the file.
+  * Click _UMLS CUI to several disease vocabularies_ in the _download page_ of DisGeNET to get the ``disease_mappings.tsv`` file. DisGeNET disease ids which can be mapped to HPO based on the vocabulary field in the file.
   * Based on the above steps, the gene-phenotype association file from DisGeNET was obtained.
-  * _disgenet.py_ file provide the prcessing.
+  * ``disgenet.py`` file provide the prcessing.
 ## String
   * Please firstly open STRING database _(https://string-db.org/cgi/download.pl)_ and choose "organism" as "Homo sapiens", then download "9606.protein.links.v11.0.txt.gz" (version number may change). Meanwhile, download mapping file under "ACCESSORY DATA" category, or open website Uniprot website _(https://string-db.org/mapping_files/uniprot_mappings/)_ to download it. 
-  * Run _string.py_ to get a json file containing PPI data.
+  * Run ``string.py`` to get a json file containing PPI data.
 ## Feature_GO
   * Download gene function annotation from Uniprot database _(https://string-db.org/mapping_files/uniprot_mappings/).
   
 # src
 * The implementation of SSLpheno
 
-    src/evaluation.py：This script is used to calculate macro_average and micro_average metrics.    
-    src/layers.py： The module for decoding    
-    src/model.py： The adaptive encoder     
-    src/optimizer.py： This script is used to caculate the LOSS and optimizing model    
-    src/main.py：The main file of SSLpheno    
-    src/trainNN.py： The deep neural network multi_label classifier    
-    src/utils.py：The module for loading data
+    ``src/evaluation.py：``This script is used to calculate macro_average and micro_average metrics.    
+    ``src/layers.py：`` The module for decoding    
+    ``src/model.py：`` The adaptive encoder     
+    ``src/optimizer.py：`` This script is used to caculate the LOSS and optimizing model    
+    ``src/main.py：``The main file of SSLpheno    
+    ``src/trainNN.py：`` The deep neural network multi_label classifier    
+    ``src/utils.py：``The module for loading data
 	
 ## preprocessing
   * Python files for preprocessing raw data
@@ -40,7 +40,7 @@ Our model is implemented by Python 3.7 with Pytorch 1.4.0 and run on Nvidia GPU 
     ``string.py``: Providing the codes for GGA network construction.<br>
     ``obo_parser.py, ontology.py, utils.py`` are auxiliary files.
   
-# data
+# Data
 ## hpo_2020
   * Dataset obtained from HPO database, providing the data files for SSLpheno 
 
