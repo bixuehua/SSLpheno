@@ -1,5 +1,6 @@
 # SSLpheno
 **SSLpheno is a model for gene-phenotype association prediction by self-supervised learning**
+<img src="https://github.com/bixuehua/SSLpheno/blob/main/Fig1.png">
 
 # Dependencies
 Our model is implemented by Python 3.7 with Pytorch 1.4.0 and run on Nvidia GPU with CUDA 10.0
